@@ -528,3 +528,64 @@ nav {
     width: 100%;
 
 }
+
+#sobre {
+  padding: 6rem 3.5rem;
+  background: #dce6f5;
+}
+
+.sobre-grid {
+  max-width:1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+
+}
+
+.sobre-esquerda h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a2a50;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-esquerda p {
+  font-size: 0.95rem;
+  color: #6070a0;
+  line-height: 1.85;
+  font-weight: 300;
+}
+
+.sobre-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stat {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(74,114,204,0.2);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stat-numero {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3a62bc;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #6070a0;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
