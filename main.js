@@ -1,6 +1,59 @@
 // =============================================
-// SCROLL REVEAL
+// DETECÇÃO DE DISPOSITIVO
+// Adiciona classe 'is-mobile' ou 'is-desktop' no body
 // =============================================
+function detectDevice() {
+  const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent)
+    || window.innerWidth <= 820;
+
+  document.body.classList.remove('is-mobile', 'is-desktop');
+  document.body.classList.add(isMobile ? 'is-mobile' : 'is-desktop');
+}
+
+detectDevice();
+window.addEventListener('resize', detectDevice);
+
+
+// =============================================
+// MENU HAMBURGUER (mobile)
+// =============================================
+const nav = document.querySelector('nav');
+
+const hamburger = document.createElement('button');
+hamburger.className = 'btn-hamburger';
+hamburger.setAttribute('aria-label', 'Abrir menu');
+hamburger.innerHTML = '<span></span><span></span><span></span>';
+nav.appendChild(hamburger);
+
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'mobile-menu';
+mobileMenu.innerHTML = `
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+`;
+document.body.appendChild(mobileMenu);
+
+hamburger.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('open', open);
+  hamburger.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+
 const revealEls = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver((entries) => {
