@@ -1,7 +1,5 @@
 // =============================================
 // SCROLL REVEAL
-// Adiciona a classe .visible quando o elemento
-// entra na viewport — use nas próximas seções
 // =============================================
 const revealEls = document.querySelectorAll('.reveal');
 
@@ -51,4 +49,43 @@ navLinks.forEach(link => {
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });
+});
+
+
+// =============================================
+// DISTORÇÃO DO GRID NO HERO
+// =============================================
+const heroGridLines = document.querySelector('.hero-grid-lines');
+
+document.addEventListener('mousemove', (e) => {
+  const x = (e.clientX / window.innerWidth - 0.5);
+  const y = (e.clientY / window.innerHeight - 0.5);
+
+  const skewX = x * 8;
+  const skewY = y * 8;
+  const scaleX = 1 + Math.abs(x) * 0.08;
+  const scaleY = 1 + Math.abs(y) * 0.08;
+
+  heroGridLines.style.transform = `
+    skew(${skewX}deg, ${skewY}deg)
+    scale(${scaleX}, ${scaleY})
+  `;
+  heroGridLines.style.transition = 'transform 0.3s ease';
+});
+
+
+// =============================================
+// DARK MODE
+// =============================================
+const btnDarkmode = document.getElementById('btnDarkmode');
+
+btnDarkmode.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+
+  // dark ativo → mostra lua cheia (🌕); modo claro → mostra lua nova (🌑)
+  if (document.body.classList.contains('dark')) {
+    btnDarkmode.textContent = '🌕';
+  } else {
+    btnDarkmode.textContent = '🌑';
+  }
 });

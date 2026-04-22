@@ -6,6 +6,7 @@
   <title>Vinícius Galvani · Front-End Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +15,26 @@
     <div class="hero-bg"></div>
     <div class="hero-grid-lines"></div>
 
-    <div class="hero-top-bar">
-      <div class="hero-top-bar-inner">
-        <div class="top-skills">
-          <span>UI/UX Design</span>
-          <span>HTML &amp; CSS</span>
-          <span>Git &amp; GitHub</span>
-          <span>Responsive Design</span>
-        </div>
+    <div class="hero-top-bar-inner">
+      <div class="top-skills-track">
+        <span>UI/UX Design</span>
+        <span>HTML &amp; CSS</span>
+        <span>Git &amp; GitHub</span>
+        <span>Responsive Design</span>
+        <span>JavaScript</span>
+        <span>Figma</span>
+        <span>UI/UX Design</span>
+        <span>HTML &amp; CSS</span>
+        <span>Git &amp; GitHub</span>
+        <span>Responsive Design</span>
+        <span>JavaScript</span>
+        <span>Figma</span>
+        <span>UI/UX Design</span>
+        <span>HTML &amp; CSS</span>
+        <span>Git &amp; GitHub</span>
+        <span>Responsive Design</span>
+        <span>JavaScript</span>
+        <span>Figma</span>
       </div>
     </div>
 
@@ -32,6 +45,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li><button class="btn-darkmode" id="btnDarkmode">🌑</button></li>
       </ul>
     </nav>
 
@@ -39,8 +53,7 @@
 
       <div class="profile-card">
         <div class="photo-wrap">
-         <img src="assets/Imageprofile.png" alt="Vinícius Galvani">
-          
+          <img src="assets/Imageprofile.png" alt="Vinícius Galvani">
           <div class="photo-placeholder-inner">
             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="24" cy="18" r="9" stroke="#6080c0" stroke-width="1.5"/>
@@ -53,7 +66,7 @@
         <div class="profile-name">Vinícius Galvani</div>
         <div class="profile-divider"></div>
         <p class="profile-bio">
-         Experiências digitais que movimentam sua marca.
+          Experiências digitais que movimentam sua marca.
         </p>
 
         <div class="card-btns">
@@ -94,49 +107,152 @@
     </div>
   </section>
 
-  
+
   <section id="sobre">
     <div class="container">
-        <p class=""section-label"></p>
-        <div class="sobre-grid">
-            <div class="sobre-esquerda">
-                <h2>Sobre mim</h2>
-<p>
-  Sou estudante de Ciência da Computação (4º semestre) na Atitus Educação, 
-  em Passo Fundo/RS. Desde 2020 atuo como designer gráfico na minha própria 
-  empresa, a Locomotion Digital, onde desenvolvo projetos de social media e 
-  branding. Minha paixão pelo design me levou naturalmente ao desenvolvimento 
-  frontend — hoje busco unir as duas áreas para criar produtos que sejam 
-  bonitos e funcionais.
-</p>
-
-
-            </div>
-            <div class="sobre-direita">
-              <div class="stat">
-  <span class="stat-numero">4º sem.</span>
-  <span class="stat-label">Ciência da Computação</span>
-</div>
-
-<div class="stat">
-  <span class="stat-numero">2020</span>
-  <span class="stat-label">Início da atuação em design</span>
-</div>
-
-<div class="stat">
-  <span class="stat-numero">SM & Branding</span>
-  <span class="stat-label">Especialidades</span>
-</div>
-
-<div class="stat">
-  <span class="stat-numero">Inglês Técnico</span>
-  <span class="stat-label">Idioma</span>
-</div>
-
-            </div>
+      <p class="section-label"></p>
+      <div class="sobre-grid">
+        <div class="sobre-esquerda reveal">
+          <h2>Sobre mim</h2>
+          <p>
+            Sou estudante de Ciência da Computação (4º semestre) na Atitus Educação,
+            em Passo Fundo/RS. Desde 2020 atuo como designer gráfico na minha própria
+            empresa, a Locomotion Digital, onde desenvolvo projetos de social media e
+            branding. Minha paixão pelo design me levou naturalmente ao desenvolvimento
+            frontend.
+          </p>
         </div>
-  </div>
-</section>   
+        <div class="sobre-direita reveal">
+          <div class="stat">
+            <span class="stat-numero">4º Semestre</span>
+            <span class="stat-label"> Ciência da Computação - ATITUS EDUCAÇÃO</span>
+          </div>
+          <div class="stat">
+            <span class="stat-numero">2020</span>
+            <span class="stat-label">Início da minha atuação em design</span>
+          </div>
+          <div class="stat">
+            <span class="stat-numero">Social Media &amp; Branding</span>
+            <span class="stat-label">Estratégia e criação de conteúdo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-numero">Inglês Técnico</span>
+            <span class="stat-label">Boa interpretação técnica</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills">
+    <div class="container">
+      <p class="section-label"></p>
+      <h2>Minhas Habilidades</h2>
+      <div class="skills-grid">
+
+        <div class="skills-grupo reveal">
+          <h3>Design &amp; Comunicação Visual</h3>
+          <div class="skills-chips">
+            <span class="skill-chip">Corel Draw</span>
+            <span class="skill-chip">Photoshop</span>
+            <span class="skill-chip">Social Media</span>
+            <span class="skill-chip">Branding &amp; Identidade Visual</span>
+            <span class="skill-chip">Tipografia</span>
+          </div>
+        </div>
+
+        <div class="skills-grupo reveal">
+          <h3>Frontend</h3>
+          <div class="skills-chips">
+            <span class="skill-chip">HTML5</span>
+            <span class="skill-chip">CSS3</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">Git &amp; GitHub</span>
+          </div>
+        </div>
+
+        <div class="skills-grupo reveal">
+          <h3>Soft Skills</h3>
+          <div class="skills-chips">
+            <span class="skill-chip">Criatividade</span>
+            <span class="skill-chip">Autonomia</span>
+            <span class="skill-chip">Atenção a detalhes</span>
+            <span class="skill-chip">Pensamento Criativo</span>
+          </div>
+        </div>
+
+        <div class="skills-grupo reveal">
+          <h3>Ferramentas</h3>
+          <div class="skills-chips">
+            <span class="skill-chip">VS Code</span>
+            <span class="skill-chip">GitHub</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projetos">
+    <div class="container">
+      <p class="section-label">Portfólio</p>
+      <h2>Meus Projetos</h2>
+
+      <div class="projetos-loading">
+        <p class="projetos-loading-label">Projetos sendo desenvolvidos...</p>
+        <div class="projetos-loading-bar">
+          <div class="projetos-loading-fill"></div>
+        </div>
+        <span class="projetos-loading-percent">99%</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contato">
+    <div class="container">
+      <p class="section-label"></p>
+      <h2>Entre em Contato</h2>
+
+      <div class="contato-grid">
+        <div class="contato-esquerda reveal">
+          <h3>Dados de Contato</h3>
+          <ul class="contato-info">
+            <li>
+              <i class="fas fa-phone-alt"></i> +55 54 99102-8346
+              <a href="https://wa.me/5554991028346" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+              </a>
+            </li>
+            <li><i class="fas fa-envelope"></i> vinicius.galvani@email.com</li>
+          </ul>
+          <p>
+            Se você tiver alguma dúvida ou desejar entrar em contato, sinta-se à vontade para usar as informações acima.
+          </p>
+        </div>
+
+        <div class="contato-direita reveal">
+          <form action="#" method="post" class="contato-form">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <script src="main.js"></script>
