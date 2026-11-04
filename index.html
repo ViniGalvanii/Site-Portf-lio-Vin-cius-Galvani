@@ -3,38 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinícius Galvani · Front-End Developer</title>
+  <title>Vinícius Galvani · Front-End Developer, IA &amp; Motion</title>
+  <meta name="description" content="Portfólio de Vinícius Galvani: front-end, motion design, agentes de IA e automação. Estudante de Ciência da Computação em Passo Fundo/RS.">
+  <noscript><style>.intro{display:none!important}body.intro-active #hero,body.intro-active #hero *{animation-play-state:running!important}</style></noscript>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="intro-active">
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-panel intro-top"></div>
+    <div class="intro-panel intro-bottom"></div>
+    <div class="intro-center">
+      <span class="intro-name">Vinícius Galvani</span>
+      <span class="intro-role">Front-End · IA · Motion</span>
+      <span class="intro-bar"><i></i></span>
+    </div>
+  </div>
 
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-grid-lines"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-glow" id="heroGlow"></div>
 
     <div class="hero-top-bar-inner">
       <div class="top-skills-track">
         <span>UI/UX Design</span>
         <span>HTML &amp; CSS</span>
-        <span>Git &amp; GitHub</span>
-        <span>Responsive Design</span>
         <span>JavaScript</span>
-        <span>Figma</span>
+        <span>Motion Design</span>
+        <span>IA &amp; Agentes</span>
+        <span>Automação com n8n</span>
+        <span>Java &amp; Spring Boot</span>
+        <span>Git &amp; GitHub</span>
         <span>UI/UX Design</span>
         <span>HTML &amp; CSS</span>
-        <span>Git &amp; GitHub</span>
-        <span>Responsive Design</span>
         <span>JavaScript</span>
-        <span>Figma</span>
+        <span>Motion Design</span>
+        <span>IA &amp; Agentes</span>
+        <span>Automação com n8n</span>
+        <span>Java &amp; Spring Boot</span>
+        <span>Git &amp; GitHub</span>
         <span>UI/UX Design</span>
         <span>HTML &amp; CSS</span>
-        <span>Git &amp; GitHub</span>
-        <span>Responsive Design</span>
         <span>JavaScript</span>
-        <span>Figma</span>
+        <span>Motion Design</span>
+        <span>IA &amp; Agentes</span>
+        <span>Automação com n8n</span>
+        <span>Java &amp; Spring Boot</span>
+        <span>Git &amp; GitHub</span>
       </div>
     </div>
 
@@ -86,15 +110,22 @@
         </h1>
 
         <p class="hero-tagline">
-          Transformando ideias em interfaces que funcionam — desde o layout responsivo até a última interação.
+          Transformando ideias em interfaces que funcionam — do layout responsivo ao motion design, com IA e automação trabalhando a meu favor.
+        </p>
+
+        <p class="hero-rotator" aria-label="Eu construo interfaces, agentes de IA, automações, sites e jogos">
+          <span class="rot-static">Eu construo</span>
+          <span class="rot-word" id="rotWord" aria-hidden="true">interfaces com motion design</span>
         </p>
 
         <div class="hero-chips">
           <span class="chip">HTML &amp; CSS</span>
           <span class="chip">JavaScript</span>
-          <span class="chip">Git</span>
+          <span class="chip">Motion Design</span>
+          <span class="chip">IA &amp; Agentes</span>
+          <span class="chip">n8n</span>
+          <span class="chip">Java</span>
           <span class="chip">Figma</span>
-          <span class="chip">UI/UX</span>
         </div>
 
         <div class="hero-deco-number">01</div>
@@ -121,6 +152,12 @@
             branding. Minha paixão pelo design me levou naturalmente ao desenvolvimento
             frontend.
           </p>
+          <p>
+            Hoje uso IA como multiplicador de força: construo agentes e automações,
+            sites com motion design para pequenos negócios (WebRápido), pipelines com
+            modelos generativos e jogos no Roblox, além de back-ends em Java e Spring Boot
+            na faculdade.
+          </p>
         </div>
         <div class="sobre-direita reveal">
           <div class="stat">
@@ -134,6 +171,10 @@
           <div class="stat">
             <span class="stat-numero">Social Media &amp; Branding</span>
             <span class="stat-label">Estratégia e criação de conteúdo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-numero">IA &amp; Automação</span>
+            <span class="stat-label">Agentes com Claude, n8n e pipelines generativos</span>
           </div>
           <div class="stat">
             <span class="stat-numero">Inglês Técnico</span>
@@ -152,41 +193,79 @@
       <div class="skills-grid">
 
         <div class="skills-grupo reveal">
+          <h3>Frontend &amp; Motion</h3>
+          <div class="skills-chips">
+            <span class="skill-chip" style="--c:0">HTML5</span>
+            <span class="skill-chip" style="--c:1">CSS3</span>
+            <span class="skill-chip" style="--c:2">JavaScript</span>
+            <span class="skill-chip" style="--c:3">GSAP</span>
+            <span class="skill-chip" style="--c:4">Canvas</span>
+            <span class="skill-chip" style="--c:5">React / Vite</span>
+            <span class="skill-chip" style="--c:6">React Native</span>
+          </div>
+        </div>
+
+        <div class="skills-grupo reveal">
+          <h3>IA &amp; Agentes</h3>
+          <div class="skills-chips">
+            <span class="skill-chip" style="--c:0">Claude &amp; Claude Code</span>
+            <span class="skill-chip" style="--c:1">Agentes de IA</span>
+            <span class="skill-chip" style="--c:2">MCP</span>
+            <span class="skill-chip" style="--c:3">Prompt engineering</span>
+            <span class="skill-chip" style="--c:4">n8n</span>
+            <span class="skill-chip" style="--c:5">ComfyUI · Wan 2.2</span>
+            <span class="skill-chip" style="--c:6">Qwen-Image</span>
+            <span class="skill-chip" style="--c:7">Chatterbox</span>
+          </div>
+        </div>
+
+        <div class="skills-grupo reveal">
+          <h3>Back-end &amp; Integrações</h3>
+          <div class="skills-chips">
+            <span class="skill-chip" style="--c:0">Java 21</span>
+            <span class="skill-chip" style="--c:1">Spring Boot</span>
+            <span class="skill-chip" style="--c:2">Microsserviços</span>
+            <span class="skill-chip" style="--c:3">PostgreSQL</span>
+            <span class="skill-chip" style="--c:4">JWT</span>
+            <span class="skill-chip" style="--c:5">Stripe</span>
+            <span class="skill-chip" style="--c:6">Meta Ads API</span>
+            <span class="skill-chip" style="--c:7">Google Places API</span>
+            <span class="skill-chip" style="--c:8">Supabase</span>
+          </div>
+        </div>
+
+        <div class="skills-grupo reveal">
           <h3>Design &amp; Comunicação Visual</h3>
           <div class="skills-chips">
-            <span class="skill-chip">Corel Draw</span>
-            <span class="skill-chip">Photoshop</span>
-            <span class="skill-chip">Social Media</span>
-            <span class="skill-chip">Branding &amp; Identidade Visual</span>
-            <span class="skill-chip">Tipografia</span>
-          </div>
-        </div>
-
-        <div class="skills-grupo reveal">
-          <h3>Frontend</h3>
-          <div class="skills-chips">
-            <span class="skill-chip">HTML5</span>
-            <span class="skill-chip">CSS3</span>
-            <span class="skill-chip">JavaScript</span>
-            <span class="skill-chip">Git &amp; GitHub</span>
-          </div>
-        </div>
-
-        <div class="skills-grupo reveal">
-          <h3>Soft Skills</h3>
-          <div class="skills-chips">
-            <span class="skill-chip">Criatividade</span>
-            <span class="skill-chip">Autonomia</span>
-            <span class="skill-chip">Atenção a detalhes</span>
-            <span class="skill-chip">Pensamento Criativo</span>
+            <span class="skill-chip" style="--c:0">Corel Draw</span>
+            <span class="skill-chip" style="--c:1">Photoshop</span>
+            <span class="skill-chip" style="--c:2">Figma</span>
+            <span class="skill-chip" style="--c:3">Social Media</span>
+            <span class="skill-chip" style="--c:4">Branding &amp; Identidade Visual</span>
+            <span class="skill-chip" style="--c:5">Tipografia</span>
           </div>
         </div>
 
         <div class="skills-grupo reveal">
           <h3>Ferramentas</h3>
           <div class="skills-chips">
-            <span class="skill-chip">VS Code</span>
-            <span class="skill-chip">GitHub</span>
+            <span class="skill-chip" style="--c:0">VS Code</span>
+            <span class="skill-chip" style="--c:1">IntelliJ</span>
+            <span class="skill-chip" style="--c:2">Git &amp; GitHub</span>
+            <span class="skill-chip" style="--c:3">Vercel</span>
+            <span class="skill-chip" style="--c:4">Render</span>
+            <span class="skill-chip" style="--c:5">ffmpeg</span>
+            <span class="skill-chip" style="--c:6">Canva</span>
+          </div>
+        </div>
+
+        <div class="skills-grupo reveal">
+          <h3>Soft Skills</h3>
+          <div class="skills-chips">
+            <span class="skill-chip" style="--c:0">Criatividade</span>
+            <span class="skill-chip" style="--c:1">Autonomia</span>
+            <span class="skill-chip" style="--c:2">Atenção a detalhes</span>
+            <span class="skill-chip" style="--c:3">Pensamento Criativo</span>
           </div>
         </div>
 
@@ -200,12 +279,121 @@
       <p class="section-label">Portfólio</p>
       <h2>Meus Projetos</h2>
 
-      <div class="projetos-loading">
-        <p class="projetos-loading-label">Projetos sendo desenvolvidos...</p>
-        <div class="projetos-loading-bar">
-          <div class="projetos-loading-fill"></div>
-        </div>
-        <span class="projetos-loading-percent">99%</span>
+      <div class="projetos-container">
+
+        <article class="projeto-card anim-in" style="--i:0">
+          <div class="projeto-header">
+            <h3 class="projeto-titulo">WebRápido</h3>
+          <div class="projeto-actions">
+            <a class="projeto-btn projeto-btn-demo" href="https://www.webrapidosite.com.br" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square"></i> Ver site</a>
+            <a class="projeto-btn projeto-btn-demo" href="https://mago-arquitetura.vercel.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square"></i> Exemplo</a>
+          </div>
+          </div>
+          <p class="projeto-descricao">
+            Meu negócio de sites e landing pages com motion design para pequenos negócios. Site próprio com checkout ao vivo (Stripe), prospecção automatizada pela Google Places API e prévias com a identidade visual de cada negócio.
+          </p>
+          <div class="projeto-footer">
+            <div class="projeto-tags">
+            <span class="tag">HTML · CSS · JS</span>
+            <span class="tag">GSAP</span>
+            <span class="tag">Canvas</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Vercel</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto-card anim-in" style="--i:1">
+          <div class="projeto-header">
+            <h3 class="projeto-titulo">Funil de infoprodutos com agentes de IA</h3>
+          </div>
+          <p class="projeto-descricao">
+            Ebooks produzidos de ponta a ponta (Investir Sem Medo, Low Carb na Prática e 28 Dias), cada um com landing page animada, Meta Pixel, vídeos de anúncio e campanhas no Meta Ads criadas e ajustadas via API.
+          </p>
+          <div class="projeto-footer">
+            <div class="projeto-tags">
+            <span class="tag">Claude</span>
+            <span class="tag">Python</span>
+            <span class="tag">WeasyPrint</span>
+            <span class="tag">Meta Ads API</span>
+            <span class="tag">Kiwify</span>
+            <span class="tag">RunPod</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto-card anim-in" style="--i:2">
+          <div class="projeto-header">
+            <h3 class="projeto-titulo">Pipeline de vídeo com IA</h3>
+          </div>
+          <p class="projeto-descricao">
+            Fluxo completo de roteiro, geração de cenas com Wan 2.2 no ComfyUI (RunPod), narração com voz própria clonada e montagem. Primeiro vídeo completo: Davi e Golias.
+          </p>
+          <div class="projeto-footer">
+            <div class="projeto-tags">
+            <span class="tag">ComfyUI</span>
+            <span class="tag">Wan 2.2</span>
+            <span class="tag">RunPod</span>
+            <span class="tag">Chatterbox</span>
+            <span class="tag">ffmpeg</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto-card anim-in" style="--i:3">
+          <div class="projeto-header">
+            <h3 class="projeto-titulo">Jogos no Roblox com Claude Code</h3>
+          </div>
+          <p class="projeto-descricao">
+            Tycoon de coleção com personagens originais, já publicado, feito com Claude Code conectado ao Roblox Studio via MCP. Em desenvolvimento: um FPS competitivo 5v5 em estilo clássico.
+          </p>
+          <div class="projeto-footer">
+            <div class="projeto-tags">
+            <span class="tag">Luau</span>
+            <span class="tag">Roblox Studio</span>
+            <span class="tag">Claude Code</span>
+            <span class="tag">MCP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto-card anim-in" style="--i:4">
+          <div class="projeto-header">
+            <h3 class="projeto-titulo">Skills customizadas para Claude</h3>
+          </div>
+          <p class="projeto-descricao">
+            Skills reutilizáveis que criei: ui-ux-pro-max (design de interfaces), animated-web (sites com animação de scroll via canvas e frames do ffmpeg) e galvani-design (landing pages com copy de conversão).
+          </p>
+          <div class="projeto-footer">
+            <div class="projeto-tags">
+            <span class="tag">Claude</span>
+            <span class="tag">Skills</span>
+            <span class="tag">Canvas</span>
+            <span class="tag">ffmpeg</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="projeto-card anim-in" style="--i:5">
+          <div class="projeto-header">
+            <h3 class="projeto-titulo">Projetos acadêmicos · ATITUS</h3>
+          </div>
+          <p class="projeto-descricao">
+            Athlex: e-commerce esportivo com app React Native e backend Spring Boot em microsserviços. MobPasso: app de linhas de ônibus de Passo Fundo com geolocalização e JWT. Microsserviços product-api e currency-api com Consul.
+          </p>
+          <div class="projeto-footer">
+            <div class="projeto-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Java 21</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Consul</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -269,8 +457,9 @@
     <div class="container">
       <p>&copy; 2026 Vinícius Galvani. Todos os direitos reservados.</p>
     </div>
-
+  </footer>
 
   <script src="main.js"></script>
+  <script src="motion.js"></script>
 </body>
 </html>
